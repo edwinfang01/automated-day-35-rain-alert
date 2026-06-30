@@ -43,7 +43,7 @@ jobs:
           # Add more secrets in Settings > Secrets > Actions
           TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
           TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
-          OWM_token: ${{ secrets.OWM_TOKEN }}
+          OWM_TOKEN: ${{ secrets.OWM_TOKEN }}
           MY_PHONE_NUMBER: ${{ secrets.MY_PHONE_NUMBER }}
           
         run: python main.py
