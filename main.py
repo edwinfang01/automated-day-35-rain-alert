@@ -16,7 +16,7 @@ weather_params = {
     'lat': 18.486057,
     'lon': -69.931213,
     'appid': OWM_token,
-    'cnt': 4
+    'cnt': 4,
 }
 
 response = requests.get(url=OWM_endpoint, params=weather_params)
