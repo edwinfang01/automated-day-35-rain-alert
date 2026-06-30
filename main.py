@@ -7,14 +7,14 @@ load_dotenv()
 
 account_sid = os.environ.get("TWILIO_ACCOUNT_SID")
 auth_token = os.environ.get("TWILIO_AUTH_TOKEN")
-OWM_token = os.environ.get('OWM_TOKEN')
+owm_token = os.environ.get('OWM_TOKEN')
 
 
 OWM_endpoint = 'https://api.openweathermap.org/data/2.5/forecast'
 weather_params = {
     'lat': 18.486057,
     'lon': -69.931213,
-    'appid': 'test',
+    'appid': owm_token,
     'cnt': 4
 }
 
@@ -31,7 +31,7 @@ print(condition_codes)
 for time_stamp in time_stamps:
     weather_id = time_stamp['weather'][0]['id']
     if weather_id < 700:
-        client = Client(account_sid, OWM_token)
+        client = Client(account_sid, auth_token)
         message = client.messages.create(
         body="It's going to rain today. Remember to bring an umbrella!",
         from_="whatsapp:+14155238886",
