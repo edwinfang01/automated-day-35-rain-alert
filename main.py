@@ -12,6 +12,8 @@ my_phone_number = os.environ.get("MY_PHONE_NUMBER")
 
 print(OWM_token)
 
+print('test')
+
 
 OWM_endpoint = 'https://api.openweathermap.org/data/2.5/forecast'
 weather_params = {
