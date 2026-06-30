@@ -10,6 +10,8 @@ auth_token = os.environ.get("TWILIO_AUTH_TOKEN")
 OWM_token = os.environ.get("OWM_TOKEN")
 my_phone_number = os.environ.get("MY_PHONE_NUMBER")
 
+print(OWM_token)
+
 
 OWM_endpoint = 'https://api.openweathermap.org/data/2.5/forecast'
 weather_params = {
