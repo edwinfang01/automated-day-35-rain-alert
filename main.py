@@ -7,8 +7,8 @@ load_dotenv()
 
 account_sid = os.environ.get("TWILIO_ACCOUNT_SID")
 auth_token = os.environ.get("TWILIO_AUTH_TOKEN")
-OWM_token = os.environ.get('OWM_TOKEN')
-my_phone_number = os.environ.get('MY_PHONE_NUMBER')
+OWM_token = os.environ.get("OWM_TOKEN")
+my_phone_number = os.environ.get("MY_PHONE_NUMBER")
 
 
 OWM_endpoint = 'https://api.openweathermap.org/data/2.5/forecast'
